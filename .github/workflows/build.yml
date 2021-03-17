@@ -10,7 +10,10 @@ jobs:
           persist-credentials: false
       - run: yarn
       - run: yarn build
-      - run: cp -r images dist
+      - run: yarn build-pdf
+      - run: mkdir -p dist/images
+      - run: cp index.html index.pdf dist/
+      - run: cp -r images/* dist/images
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
