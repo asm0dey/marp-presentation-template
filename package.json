@@ -10,6 +10,6 @@
     "serve": "marp server --watch index.md"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^0.23.2"
+    "@marp-team/marp-cli": "^0.23.3"
   }
 }
