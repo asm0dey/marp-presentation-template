@@ -24,7 +24,7 @@ jobs:
       - run: yarn build-pdf
       - run: mkdir -p dist/images
       - run: cp index.html index.pdf dist/
-      - run: cp -rf images/* dist/images
+      - run: cp -rf images/* images/.* dist/images
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
